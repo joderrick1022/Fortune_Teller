@@ -29,7 +29,50 @@ namespace Fortune_Teller
             bool blue = (favColor == "blue");
             bool indigo = (favColor == "indigo");
             bool violet = (favColor == "violet");
+
             string help = ("red, orange, yellow, green, blue, indigo, violet"  );
+
+             if (favColor == "help")
+            {
+                Console.WriteLine(help);
+            }
+
+            else if (red)
+            {
+                Console.WriteLine("boat");
+            }
+            else if (orange)
+            {
+                Console.WriteLine("train");
+            }
+            else if (yellow)
+            {
+                Console.WriteLine("air plain");
+            }
+            else if (green)
+            {
+                Console.WriteLine("ferry");
+            }
+            else if (blue)
+            {
+                Console.WriteLine("helicopter");
+            }
+            else if (indigo)
+            {
+                Console.WriteLine("rapid transit");
+            }
+            else if (violet)
+            {
+                Console.WriteLine("jet");
+            }
+           
+
+
+
+
+
+
+
 
 
 
