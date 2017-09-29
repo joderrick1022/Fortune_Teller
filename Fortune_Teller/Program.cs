@@ -22,6 +22,22 @@ namespace Fortune_Teller
             Console.WriteLine("What is your favorite ROYGBIV color? If need help understanding what ROYGBIV colors are please enter (help)");
             string favColor = Console.ReadLine().ToLower();
 
+            bool red = (favColor == "red");
+            bool orange = (favColor == "orange");
+            bool yellow = (favColor == " yellow");
+            bool green = (favColor == "green");
+            bool blue = (favColor == "blue");
+            bool indigo = (favColor == "indigo");
+            bool violet = (favColor == "violet");
+            string help = ("red, orange, yellow, green, blue, indigo, violet"  );
+
+
+
+
+
+
+
+
             Console.WriteLine("What is your age? numbers only please EX(1,25,6,7,76)");
             int userAge = int.Parse(Console.ReadLine());
 
