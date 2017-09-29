@@ -55,6 +55,9 @@ namespace Fortune_Teller
             int one = 1;
             int two = 2;
             int three = 3;
+            bool four = (siblings >= 4);
+            bool neg = (siblings < 0);
+
 
             //bool china = (siblings == 0);
             //bool africa  = (siblings == 1);
@@ -62,7 +65,7 @@ namespace Fortune_Teller
             //bool florida = (siblings == 3);
 
 
-            
+
 
 
 
@@ -73,7 +76,7 @@ namespace Fortune_Teller
 
             }
 
-            else if (siblings == one )
+            else if (siblings == one)
             {
                 Console.WriteLine("Russia");
 
@@ -86,12 +89,20 @@ namespace Fortune_Teller
             }
 
 
-        
+
 
             else if (siblings == three)
             {
                 Console.WriteLine("Cancoon \a");
 
+            }
+            else if (four)
+            {
+                Console.WriteLine("North Korea");
+
+            }
+            else if(neg){
+                Console.WriteLine("North Korea");
             }
            
 
@@ -102,10 +113,7 @@ namespace Fortune_Teller
 
 
 
-            {
-
-            }
-
+           
 
             
 
