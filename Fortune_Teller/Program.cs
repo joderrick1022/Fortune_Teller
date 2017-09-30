@@ -31,37 +31,50 @@ namespace Fortune_Teller
             bool violet = (favColor == "violet");
 
             string help = ("red, orange, yellow, green, blue, indigo, violet"  );
+            bool helper = (favColor == "help");
 
-             if (favColor == "help")
+            //for(int x = 0; x < favColor.Length; x++ )
+            //{
+            //    Console.WriteLine(help);
+            //}
+
+             for(helper)
             {
                 Console.WriteLine(help);
+
+                
+
             }
 
-            else if (red)
+            //else if ()
+            //{
+            //    Console.ReadLine(favColor);
+
+
+            //}
+            else  
             {
-                Console.WriteLine("boat");
+                Console.WriteLine("What is your favorite ROYGBIV color? If need help understanding what ROYGBIV colors are please enter (help)");
+                 Console.ReadLine();
+
             }
-            else if (orange)
-            {
-                Console.WriteLine("train");
-            }
-            else if (yellow)
+            if  (yellow)
             {
                 Console.WriteLine("air plain");
             }
-            else if (green)
+            else if  (green)
             {
                 Console.WriteLine("ferry");
             }
-            else if (blue)
+            else if  (blue)
             {
                 Console.WriteLine("helicopter");
             }
-            else if (indigo)
+            else  (indigo)
             {
                 Console.WriteLine("rapid transit");
             }
-            else if (violet)
+            else(violet)
             {
                 Console.WriteLine("jet");
             }
