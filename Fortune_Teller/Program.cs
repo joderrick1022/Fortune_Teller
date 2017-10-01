@@ -12,121 +12,31 @@ namespace Fortune_Teller
         {
 
 
+            Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine().ToLower();
 
-            //Console.WriteLine("What is your first name?");
-            //string firstName = Console.ReadLine().ToLower();
-
-            //Console.WriteLine("what is your Last name? + \a");
-            //string lastName = Console.ReadLine().ToLower();
-
-            //Console.WriteLine("What is your favorite ROYGBIV color? If need help understanding what ROYGBIV colors are please enter (help)");
-            //string favColor = Console.ReadLine().ToLower();
-            //bool red = (favColor == "red");
-            //bool orange = (favColor == "orange");
-            //bool yellow = (favColor == " yellow");
-            //bool green = (favColor == "green");
-            //bool blue = (favColor == "blue");
-            //bool indigo = (favColor == "indigo");
-            //bool violet = (favColor == "violet");
-
-            //string help = ("red, orange, yellow, green, blue, indigo, violet"  );
-            //bool helper = (favColor == "help");
-
-            ////for(int x = 0; x < favColor.Length; x++ )
-            ////{
-            ////    Console.WriteLine(help);
-            ////}
-
-            //if (helper)
+            Console.WriteLine("what is your Last name? + \a");
+            string lastName = Console.ReadLine().ToLower();
 
 
 
-            //{
-            //    Console.WriteLine(help);
+            Console.WriteLine("What is your age? numbers only please EX(1,25,6,7,76)");
+            int userAge = int.Parse(Console.ReadLine());
 
-            //    {
+            int retireYears = (userAge - 66);
+            bool odd = (userAge % 2 != 0); // these two bools are to check to see if user age is even olr odd.
+            bool even = (userAge % 2 == 0);
+            string fullName = firstName + lastName;
 
-            //    }
+            if (odd)
+            {
 
-
-
-            //}
-
-
-
-            ////else if ()
-            ////{
-            ////    Console.ReadLine(favColor);
-
-
-            ////}
-            ////else()
-            ////{
-            ////    Console.WriteLine("What is your favorite ROYGBIV color? If need help understanding what ROYGBIV colors are please enter (help)");
-            ////     Console.ReadLine();
-
-            ////}
-            ////if  (yellow)
-            ////{
-            ////    Console.WriteLine("air plain");
-            ////}
-            ////else if  (green)
-            ////{
-            ////    Console.WriteLine("ferry");
-            ////}
-            ////else if  (blue)
-            ////{
-            ////    Console.WriteLine("helicopter");
-            ////}
-            ////else if(indigo)
-            ////{
-            ////    Console.WriteLine("rapid transit");
-            ////}
-            ////else if(violet)
-            ////{
-            ////    Console.WriteLine("jet");
-            ////}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            ////Console.WriteLine("What is your age? numbers only please EX(1,25,6,7,76)");
-            ////int userAge = int.Parse(Console.ReadLine());
-
-            ////int retireYears = (userAge - 66);
-            ////bool odd = (userAge % 2 != 0); // these two bools are to check to see if user age is even olr odd.
-            ////bool even = (userAge % 2 == 0);
-            ////string fullName = firstName + lastName;
-
-            ////if (odd)
-            ////{
-
-            ////    Console.WriteLine("you will retire in " + retireYears + " years" + "!");
-            ////}
-            ////else if (even)
-            ////{
-            ////    Console.WriteLine("you will retire in " + retireYears + " years" + "!");
-            ////}
-
-
-
-
-
-
-
-
+                Console.WriteLine("you will retire in " + retireYears + " years" + "!");
+            }
+            else if (even)
+            {
+                Console.WriteLine("you will retire in " + retireYears + " years" + "!");
+            }
 
             Console.WriteLine("What month were you born?");
             int birthMonth = int.Parse(Console.ReadLine());
@@ -144,54 +54,107 @@ namespace Fortune_Teller
             int nov = 11;
             int dec = 12;
 
-            if(birthMonth == jan)
+            if (birthMonth == jan)
             {
                 Console.WriteLine("$300.000.00");
             }
-            if (birthMonth == feb )
+            if (birthMonth == feb)
             {
                 Console.WriteLine("$300.000.00");
             }
-            if (birthMonth == mar )
+            if (birthMonth == mar)
             {
                 Console.WriteLine("$300.000.00");
             }
-            if (birthMonth == apr )
+            if (birthMonth == apr)
             {
                 Console.WriteLine("$300.000.00");
             }
-            if (birthMonth == may )
+            if (birthMonth == may)
             {
                 Console.WriteLine("$750, 000.00");
             }
-            if (birthMonth == jun )
+            if (birthMonth == jun)
             {
                 Console.WriteLine("$750, 000.00");
             }
-            if (birthMonth == jul )
+            if (birthMonth == jul)
             {
                 Console.WriteLine("$750, 000.00");
             }
-            if (birthMonth == aug )
+            if (birthMonth == aug)
             {
                 Console.WriteLine("$750, 000.00");
             }
-            if (birthMonth == sep )
+            if (birthMonth == sep)
             {
                 Console.WriteLine("$1, 000, 000.00");
             }
-            if (birthMonth == oct )
+            if (birthMonth == oct)
             {
                 Console.WriteLine("$1, 000, 000.00");
             }
-            if (birthMonth == nov )
+            if (birthMonth == nov)
             {
                 Console.WriteLine("$1, 000, 000.00");
             }
-            if (birthMonth == dec )
+            if (birthMonth == dec)
             {
                 Console.WriteLine("$1, 000, 000.00");
             }
+            if (birthMonth != jan && birthMonth != feb && birthMonth != mar && birthMonth != apr && birthMonth != may && birthMonth != jun &&
+
+
+                birthMonth != jul && birthMonth != aug && birthMonth != sep && birthMonth != oct && birthMonth != nov && birthMonth != dec)
+            {
+                Console.WriteLine("$0.00");
+            }
+
+            //Console.WriteLine("What is your favorite ROYGBIV color? If need help understanding what ROYGBIV colors are please enter (help)");
+            //string favColor = Console.ReadLine().ToLower();
+            //bool red = (favColor == "red");
+            //bool orange = (favColor == "orange");
+            //bool yellow = (favColor == " yellow");
+            //bool green = (favColor == "green");
+            //bool blue = (favColor == "blue");
+            //bool indigo = (favColor == "indigo");
+            //bool violet = (favColor == "violet");
+
+            //string help = ("red, orange, yellow, green, blue, indigo, violet");
+            //bool helper = (favColor == "help");
+
+            //for (int x = 0; x == helper.IndexOf; x++)
+            //{
+            //    Console.WriteLine(help);
+            //}
+
+            //if (helper)
+
+
+
+            //{
+            //    Console.WriteLine(help);
+
+            //    {
+
+            //    }
+
+                Console.WriteLine("How many siblings do you have?");
+                int siblings = int.Parse(Console.ReadLine());
+
+
+                int zero = 0;
+                int one = 1;
+                int two = 2;
+                int three = 3;
+                bool four = (siblings >= 4);
+                bool neg = (siblings < 0);
+
+
+                bool china = (siblings == 0);
+                bool africa = (siblings == 1);
+                bool russia = (siblings == 2);
+                bool florida = (siblings == 3);
 
 
 
@@ -199,77 +162,26 @@ namespace Fortune_Teller
 
 
 
-            ////Console.WriteLine("How many siblings do you have?");
-            ////int siblings = int.Parse(Console.ReadLine());
+                if (siblings == zero)
+                {
+                    Console.WriteLine("Africa");
 
+                }
 
-            ////int zero = 0;
-            ////int one = 1;
-            ////int two = 2;
-            ////int three = 3;
-            ////bool four = (siblings >= 4);
-            ////bool neg = (siblings < 0);
+                else if (siblings == one)
+                {
+                    Console.WriteLine("Russia");
 
+                }
 
-            //////bool china = (siblings == 0);
-            //////bool africa  = (siblings == 1);
-            //////bool russia = (siblings == 2);
-            //////bool florida = (siblings == 3);
+                else if (siblings == two)
+                {
+                    Console.WriteLine("North Pole \a");
 
+                }
 
+                
 
-
-
-
-
-            ////if (siblings == zero)
-            ////{
-            ////    Console.WriteLine("Africa");
-
-            ////}
-
-            ////else if (siblings == one)
-            ////{
-            ////    Console.WriteLine("Russia");
-
-            ////}
-
-            ////else if (siblings == two)
-            ////{
-            ////    Console.WriteLine("North Pole \a");
-
-            ////}
-
-
-
-
-            ////else if (siblings == three)
-            ////{
-            ////    Console.WriteLine("Cancoon \a");
-
-            ////}
-            ////else if (four)
-            ////{
-            ////    Console.WriteLine("North Korea");
-
-            ////}
-            ////else if(neg){
-            ////    Console.WriteLine("North Korea");
-            ////}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            }
         }
-    }
 }
