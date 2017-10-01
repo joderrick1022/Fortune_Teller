@@ -144,6 +144,54 @@ namespace Fortune_Teller
             int nov = 11;
             int dec = 12;
 
+            if(birthMonth == jan)
+            {
+                Console.WriteLine("$300.000.00");
+            }
+            if (birthMonth == feb )
+            {
+                Console.WriteLine("$300.000.00");
+            }
+            if (birthMonth == mar )
+            {
+                Console.WriteLine("$300.000.00");
+            }
+            if (birthMonth == apr )
+            {
+                Console.WriteLine("$300.000.00");
+            }
+            if (birthMonth == may )
+            {
+                Console.WriteLine("$750, 000.00");
+            }
+            if (birthMonth == jun )
+            {
+                Console.WriteLine("$750, 000.00");
+            }
+            if (birthMonth == jul )
+            {
+                Console.WriteLine("$750, 000.00");
+            }
+            if (birthMonth == aug )
+            {
+                Console.WriteLine("$750, 000.00");
+            }
+            if (birthMonth == sep )
+            {
+                Console.WriteLine("$1, 000, 000.00");
+            }
+            if (birthMonth == oct )
+            {
+                Console.WriteLine("$1, 000, 000.00");
+            }
+            if (birthMonth == nov )
+            {
+                Console.WriteLine("$1, 000, 000.00");
+            }
+            if (birthMonth == dec )
+            {
+                Console.WriteLine("$1, 000, 000.00");
+            }
 
 
 
